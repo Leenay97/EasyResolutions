@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+body {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tree {
+    background-image: url('bg.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 320px;
+    height:  600px;
+    position: relative;
+}
+.ball {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    overflow-wrap: normal;
+    font-size: 80%;
+}
+
+.ball.ball1 {
+    background-image: url('pics/ball/1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 90px;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    text-align: center;
+    padding: 30px 20px;
+
+    -webkit-animation: swing 2.3s ease;
+    animation: swing 2.3s ease;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.ball.ball2 {
+    background-image: url('pics/candy/1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 100px;
+    position: absolute;
+    bottom: 90px;
+    right:40px;
+
+    -webkit-animation: swing 1.8s ease;
+    animation: swing 1.8s ease;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.ball.ball3 {
+    background-image: url('pics/present/1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+}
+
+.ball.ball4 {
+    background-image: url('pics/horse/1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 110px;
+    position: absolute;
+    bottom: 200px;
+    right: 80px;
+    padding: 10px 40px;
+
+    -webkit-animation: swing 2s ease;
+    animation: swing 2s ease;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.ball.ball5 {
+    background-image: url('pics/mitten/1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    top: 170px;
+    right: 70px;
+    text-align: center;
+    padding: 30px;
+
+    -webkit-animation: swing 3s ease;
+    animation: swing 3s ease;
+    -webkit-animation-iteration-count: infinite;
+    
+}
+
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: rotate(1deg);
+        transform: rotate(1deg);
+    }
+    30%
+    {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+    50%
+    {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+    65%
+    {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+    80%
+    {
+        -webkit-transform: rotate(1deg);
+        transform: rotate(1deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: rotate(1deg);
+        transform: rotate(1deg);
+    }
+    30%
+    {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+    50%
+    {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+    65%
+    {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+    80%
+    {
+        -webkit-transform: rotate(1deg);
+        transform: rotate(1deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
